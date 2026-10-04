@@ -1,0 +1,67 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="quiz-card">
+
+        <div class="icon">🎙️</div>
+
+        <h1>Voice Quiz</h1>
+        <p class="subtitle">Answer the questions using your voice</p>
+
+        <div class="progress">
+            Question <span id="questionNumber">1</span> of
+            <span id="totalQuestions">5</span>
+        </div>
+
+        <div class="question-box">
+            <h2 id="question">Loading question...</h2>
+        </div>
+
+        <div class="options" id="options"></div>
+
+        <button id="voiceBtn" class="voice-btn">
+            🎤 Speak Answer
+        </button>
+
+        <p id="status" class="status">
+            Click the button and say A, B, C or D.
+        </p>
+
+        <div class="answer-box">
+            <p>Your Answer:</p>
+            <strong id="userAnswer">---</strong>
+        </div>
+
+        <button id="nextBtn" class="next-btn">
+            Next Question ➡️
+        </button>
+
+        <div id="result" class="result hidden">
+            <h2>🎉 Quiz Completed!</h2>
+            <p>Your Score</p>
+            <div id="score">0 / 5</div>
+            <button onclick="restartQuiz()" class="restart-btn">
+                🔄 Restart Quiz
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
